@@ -17,10 +17,10 @@ table ends
 
 codesg segment
 start:
-	call showcomdata
+	call processcomdata
 	mov ax,4c00H
  int 21H
-showcomdata:
+processcomdata:
  mov bx,0;bx用于年份和利润，每次+4
  mov bp,0;bp用于员工，每次+2
  mov di,0
